@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .centrar{
+            width:70%;
+            margin:0 auto;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="estils.css"/> <!--Per relacionar amb els estils del css-->
+</head>
+<body>
+    <h1  style="color: blueviolet;text-align:center;">Formulari d'incendi Murcia</h1>
+    <div class="centrar">
+    <form action="formulari_enviat.html"> <!--Per relacionar amb un altre docu html-->
+    <fieldset> <!--És per fer un quadre/camp--> 
+        <fieldset>      
+        <label for="inputNom">Nom i cognoms:</label> <!--Label e input és per saber exactament la informació del camp-->
+        <input id="inputNom"type="text" required> <!--El required és per a què les preguntes siguin obligatoris-->
+        <br> <!--Tots els br és per fer un espai-->
+        </fieldset>
+        <fieldset>
+        <label for="inputE-mail">Correu electrònic:</label>
+        <input id="inputE-mail"type="email" required> 
+        <br>
+        </fieldset>
+        <fieldset>
+        <label for="inputEdat">Edat:</label>
+        <input id="inputEdat"type="Number" required>
+        <br>
+    </fieldset>
+    <fieldset>
+        <label for="Gènere">Gènere:</label>
+        <select id="Gènere"name="Gènere"> <!-- El select és per fer una pregunta amb respostes desplegables amb les opcions-->
+            <option>Home</option>    
+            <option>Dona</option>
+            <option>Altres</option>
+        </select>
+    </fieldset>
+<fieldset>
+        <ol>
+            <li>Quin estudi teniu?</li>
+            <input id="EduESO" type="radio" name="educació" checked> <!-- El checked és per tenir una opció marcada per defecte-->
+            <label for="EduESO">ESO</label>
+            <br>
+        
+            <input id="EduBatxillerat" type="radio" name="educació">
+            <label for="EduBatxillerat">Batxillerat</label>
+            <br>
+
+            <input id="EduCFGS" type="radio" name="educació">
+            <label for="EduCFGS">CFGS</label>
+            <br>
+            
+            <input id="EduUniversitat" type="radio" name="educació">
+            <label for="EduUniversitat">Universitat</label>
+            <br><br><br>
+        
+            
+            <li>A quines discoteques t'agrada anar?</li>
+            <input id="disco1" type="checkbox" name="discoteca" checked>
+            <label for="disco1">Shoko</label>
+            <br>
+            
+            <input id="disco2" type="checkbox" name="discoteca">
+            <label for="disco2">Pacha</label>
+            
+            <br>
+
+            <input id="disco3" type="checkbox" name="discoteca">
+            <label for="disco3">Opium</label>
+            <br>
+
+             <input id="disco4" type="checkbox" name="discoteca">
+            <label for="disco4">Cocoa</label>
+            <br>
+            <br><br>
+
+            <li>Què penseu d'aquest incendi?</li>
+            <label for="opinio"></label>
+            <textarea placeholder="Escriu" name="opinio" id="opinio" cols="30" rows="5" required></textarea>  <!--El textarea és per fer una resposta amb un text llarg-->
+        </ol>
+        <input type="submit" id=Enviar value="Enviar formulari">
+    </fieldset>
+</fieldset>
+    </form>
+</div>
+</body>
+</html>
